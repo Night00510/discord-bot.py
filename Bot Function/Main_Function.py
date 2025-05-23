@@ -1,5 +1,9 @@
 import discord
+<<<<<<< HEAD
 from Token import get_token #ใช้ชื่อฟังก์ชันที่ตั้ง
+=======
+from Token import get_token #ใช้ชื่อฟังก์ชันที่ตั้งให้ถูกด้วย
+>>>>>>> 5b40d920f92b530ead073f56dfbecf31ecfd53b3
 from discord.ext import commands
 from random import randint
 
@@ -36,5 +40,9 @@ async def on_message(message):
     if mes == "สวัสดี" or mes == "Hello" or mes == "hi" or mes == "Hi" or mes == "ดีครับ" or mes =="ดี" or mes == "hello":
         await message.channel.send(embed = make_embed("สวัสดี",f"สวัสดี {message.author.mention}")) #ส่งข้อความไปที่ห้อง
 
+<<<<<<< HEAD
 bot.run(get_token()) #ดึง bot token 
                      #เก็บ token ไว้ในอีกไฟล์
+=======
+bot.run(token)
+>>>>>>> 5b40d920f92b530ead073f56dfbecf31ecfd53b3
