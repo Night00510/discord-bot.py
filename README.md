@@ -9,4 +9,4 @@ test discord.py
 - [ ]  สุ่มเลขอะไรก็ได้(รับinput)
 - [ ]  เปิด link youTube
 - [ ]  ตรวจห้องว่ามีคนใหม
-- [ ]  เล่น Soundpa
+- [ ]  เล่น Soundpad
