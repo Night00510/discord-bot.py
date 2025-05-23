@@ -1,8 +1,11 @@
 # discord-bot.py
 test discord.py
 
-# features
+# needs
+discord.py
+python
 
+# features
 - [*]  แจ้งเตือนคนเข้า ออก
 - [ ]  สุ่มหัว ก้อย
 - [ ]  สุ่มเลข 1-100
