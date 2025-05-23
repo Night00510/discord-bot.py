@@ -1,12 +1,12 @@
 import discord
-from Token import get_token
+from Token import get_token #ใช้ชื่อฟังก์ชันที่ตั้ง
 from discord.ext import commands
+from random import randint
 
-token = get_token() #ดึง bot token เก็บ token ไว้ในอีกไฟล์  
 bot = commands.Bot(command_prefix="!", intents = discord.Intents.all())
 
 def make_embed(title, description): #embedร้วม
-    return discord.Embed(title = title, description = description, color = 0x77ff77)
+    return discord.Embed(title = title, description = description, color = randint(0, 0xFFFFFF)) #สุ่มสีส
 
 #bot events
 @bot.event
@@ -36,4 +36,5 @@ async def on_message(message):
     if mes == "สวัสดี" or mes == "Hello" or mes == "hi" or mes == "Hi" or mes == "ดีครับ" or mes =="ดี" or mes == "hello":
         await message.channel.send(embed = make_embed("สวัสดี",f"สวัสดี {message.author.mention}")) #ส่งข้อความไปที่ห้อง
 
-bot.run(token)
+bot.run(get_token()) #ดึง bot token 
+                     #เก็บ token ไว้ในอีกไฟล์
