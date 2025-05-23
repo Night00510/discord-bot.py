@@ -1,7 +1,8 @@
 import discord
+from Token import get_token
 from discord.ext import commands
 
-token = "YOUR_BOT_TOKEN"
+token = get_token() #ดึง bot token เก็บ token ไว้ในอีกไฟล์  
 bot = commands.Bot(command_prefix="!", intents = discord.Intents.all())
 
 def make_embed(title, description): #embedร้วม
