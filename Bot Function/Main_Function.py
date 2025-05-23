@@ -1,5 +1,5 @@
 import discord
-from Token import get_token
+from Token import get_token #ใช้ชื่อฟังก์ชันที่ตั้งให้ถูกด้วย
 from discord.ext import commands
 
 token = get_token() #ดึง bot token เก็บ token ไว้ในอีกไฟล์  
